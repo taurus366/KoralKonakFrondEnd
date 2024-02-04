@@ -539,11 +539,17 @@ footer > div.footer-container {
   align-items: center;
   flex-direction: column;
 }
+footer > div.footer-container > .particles-js-canvas-el {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
 footer > div.footer-container > article.items-icon {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+  z-index: 10;
 }
 footer > div.footer-container > article.items-icon > article.kk-img > a > img {
   width: 50px;
@@ -556,6 +562,7 @@ footer > div.footer-container > article.items-icon > article.aiolds-img > a > im
   filter: brightness(9999) invert(0.5) sepia(1) hue-rotate(192deg);
 }
 footer > div.footer-container > article.main-text {
+  z-index: 10;
   padding: 20px 0 0 0;
   text-align: center;
 }
