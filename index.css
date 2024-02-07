@@ -500,6 +500,7 @@ main div.index-container > .new-year-promotions > section.new-year-promotions-it
   justify-content: space-around;
 }
 main div.index-container > .new-year-promotions > section.new-year-promotions-items > article.promotions-items-item {
+  overflow: hidden;
   position: relative;
   margin: 20px 20px;
   width: 246px;
@@ -517,16 +518,27 @@ main div.index-container > .new-year-promotions > section.new-year-promotions-it
   border-bottom: 2px solid burlywood;
   padding-bottom: 2px;
 }
+main div.index-container > .new-year-promotions > section.new-year-promotions-items > article.promotions-items-item > article.name {
+  top: 96px;
+  position: absolute;
+  color: burlywood;
+  font-weight: bold;
+  left: 55px;
+  border-bottom: 2px solid burlywood;
+  padding-bottom: 2px;
+}
 main div.index-container > .new-year-promotions > section.new-year-promotions-items > article.promotions-items-item > section.items {
+  height: 265px;
   color: white;
   position: relative;
-  top: 100px;
+  top: 135px;
   overflow: auto;
   max-height: 305px;
   display: flex;
   flex-direction: column;
   padding-left: 10px;
   align-items: flex-start;
+  overflow: auto;
 }
 
 footer > div.footer-container {
@@ -615,6 +627,10 @@ footer > div.footer-container > article.main-text > p > b > a {
 .show-contacts form#contactForm button.submit:focus {
   box-shadow: 0px -1px 0 0.2rem rgba(207, 229, 87, 0.55);
 }
+.show-contacts p.form-send-question {
+  padding-top: 20px;
+  text-align: center;
+}
 
 .show-gallery div.row {
   justify-content: space-evenly;
@@ -629,4 +645,128 @@ footer > div.footer-container > article.main-text > p > b > a {
 
 .btn-submit > input {
   padding: 5px 10px;
+}
+
+@media only screen and (max-width: 765px) {
+  div.index-container {
+    background: #FCF3CF;
+  }
+  div.index-container > section.index-container-section-welcome {
+    flex-direction: column !important;
+  }
+  div.index-container > section.index-container-section-welcome > article.welcome-left {
+    display: none;
+  }
+  div.index-container > section.index-container-section-welcome > article.welcome-icon-middle {
+    text-align: end;
+    padding: 0 !important;
+  }
+  div.index-container > section.index-container-section-welcome > article.welcome-icon-middle > img {
+    width: calc(25% - 40px) !important;
+  }
+  div.index-container > section.index-container-section-welcome > article.welcome-right {
+    display: none;
+  }
+  div.index-container > section.index-container-section-welcome > a.arrow-right {
+    display: none;
+  }
+  div.index-container > section.index-container-section-welcome > a.arrow-left {
+    display: none;
+  }
+  div.index-container > section.index-container-section-welcome > article.carousel-imgs > article.btn-reservation {
+    position: relative !important;
+    bottom: -310px !important;
+  }
+  div.index-container > section.index-container-section-welcome > article.carousel-imgs > article.slide > img {
+    height: 350px !important;
+  }
+  div.index-container > section.index-container-section-welcome > article.carousel-imgs > article.slide > span {
+    font-size: 4vw !important;
+    top: 135% !important;
+  }
+  div.index-container > .index-container-section-box-menu {
+    align-items: center;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    flex-direction: column;
+    width: 300px !important;
+    height: unset !important;
+    top: 1190px !important;
+    left: 50% !important;
+    position: relative !important;
+  }
+  div.index-container > .index-container-section-box-menu > article.box-menu-part-one > article.box-menu-one {
+    height: 310px !important;
+    width: 310px !important;
+    margin: 0 0 15px 0;
+  }
+  div.index-container > .index-container-section-box-menu > article.box-menu-part-one > article.box-menu-one > img {
+    filter: unset !important;
+  }
+  div.index-container > .index-container-section-box-menu > article.box-menu-part-one > article.box-menu-four {
+    height: 310px !important;
+    width: 310px !important;
+    margin: 0 0 15px 0;
+  }
+  div.index-container > .index-container-section-box-menu > article.box-menu-part-one > article.box-menu-four > img {
+    filter: unset !important;
+  }
+  div.index-container > .index-container-section-box-menu > article.box-menu-part-two {
+    height: 415px !important;
+    width: 310px !important;
+    margin: 0 0 15px 0;
+  }
+  div.index-container > .index-container-section-box-menu > article.box-menu-part-three > article.box-menu-three {
+    height: 310px !important;
+    width: 310px !important;
+    margin: 0 0 15px 0;
+  }
+  div.index-container > .index-container-section-box-menu > article.box-menu-part-three > article.box-menu-three > img {
+    filter: unset !important;
+  }
+  div.index-container > .index-container-section-box-menu > article.box-menu-part-three > article.box-menu-five {
+    height: 310px !important;
+    width: 310px !important;
+  }
+  div.index-container > .index-container-section-box-menu > article.box-menu-part-three > article.box-menu-five > img {
+    filter: unset !important;
+  }
+  div.index-container > .index-container-section-extras {
+    height: 570px !important;
+  }
+  div.index-container > .index-container-section-extras > article.section-extras-article-extras {
+    bottom: -200px !important;
+  }
+  div.index-container > .index-container-section-extras > article.section-extras-article-extras > h2 {
+    position: relative !important;
+    bottom: -30px !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  div.index-container > .index-container-section-extras > article.section-extras-article-extras > section.article-extras {
+    flex-direction: column !important;
+  }
+  div.index-container section.hide-phone-call-menu {
+    display: unset !important;
+  }
+  div.index-container section.hide-phone-call-menu > a.menu-item {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+  }
+  div.index-container section.hide-phone-call-menu > a.menu-item > img {
+    width: 55px;
+    filter: invert(1);
+  }
+  div.index-container section.hide-phone-call-menu > a.phone-call {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
+  }
+  div.index-container section.hide-phone-call-menu > a.phone-call > img {
+    width: 55px;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -50,4 +50,10 @@ $('.reservation-modal-close').on('click', function(){
    $('#reservation').modal('toggle');
 });
 // RESERVATION
+// SIDE MENU
+// $('.menu-item').on('click', function(){
+//    console.log('test');
+//    $('#side-menu').modal('toggle');
+// })
+// SIDE MENU
 
