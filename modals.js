@@ -53,7 +53,7 @@ $('.reservation-modal-close').on('click', function(){
 // SIDE MENU
 // $('.menu-item').on('click', function(){
 //    console.log('test');
-//    $('#side-menu').modal('toggle');
+//    $('#offcanvasWithBothOptions').modal('toggle');
 // })
 // SIDE MENU
 

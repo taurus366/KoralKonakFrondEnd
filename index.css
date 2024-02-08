@@ -654,12 +654,17 @@ footer > div.footer-container > article.main-text > p > b > a {
   div.index-container > section.index-container-section-welcome {
     flex-direction: column !important;
   }
+  div.index-container > section.index-container-section-welcome h1.title {
+    top: 80% !important;
+  }
   div.index-container > section.index-container-section-welcome > article.welcome-left {
     display: none;
   }
   div.index-container > section.index-container-section-welcome > article.welcome-icon-middle {
     text-align: end;
     padding: 0 !important;
+    position: relative;
+    top: -35px;
   }
   div.index-container > section.index-container-section-welcome > article.welcome-icon-middle > img {
     width: calc(25% - 40px) !important;
@@ -682,7 +687,7 @@ footer > div.footer-container > article.main-text > p > b > a {
   }
   div.index-container > section.index-container-section-welcome > article.carousel-imgs > article.slide > span {
     font-size: 4vw !important;
-    top: 135% !important;
+    top: 110% !important;
   }
   div.index-container > .index-container-section-box-menu {
     align-items: center;
@@ -746,6 +751,7 @@ footer > div.footer-container > article.main-text > p > b > a {
   }
   div.index-container > .index-container-section-extras > article.section-extras-article-extras > section.article-extras {
     flex-direction: column !important;
+    height: 470px;
   }
   div.index-container section.hide-phone-call-menu {
     display: unset !important;
@@ -754,7 +760,7 @@ footer > div.footer-container > article.main-text > p > b > a {
     position: fixed;
     top: 10px;
     left: 10px;
-    z-index: 9999;
+    z-index: 500;
   }
   div.index-container section.hide-phone-call-menu > a.menu-item > img {
     width: 55px;
@@ -769,4 +775,24 @@ footer > div.footer-container > article.main-text > p > b > a {
   div.index-container section.hide-phone-call-menu > a.phone-call > img {
     width: 55px;
   }
+}
+@media only screen and (max-width: 400px) {
+  div.index-container > section.index-container-section-welcome h1.title {
+    font-size: 25px !important;
+  }
+  div.index-container > section.index-container-section-welcome > article.carousel-imgs > article.slide > span.slider-content {
+    top: 130% !important;
+  }
+}
+@media only screen and (max-width: 345px) {
+  div.index-container > section.index-container-section-welcome h1.title {
+    top: 130% !important;
+    font-size: 15px !important;
+  }
+  div.index-container > section.index-container-section-welcome > article.carousel-imgs > article.slide > span.slider-content {
+    top: 170% !important;
+  }
+}
+.offcanvas {
+  --bs-offcanvas-width: 300px !important;
 }/*# sourceMappingURL=index.css.map */

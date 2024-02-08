@@ -912,6 +912,11 @@ footer > div.footer-container {
 
         & > section.index-container-section-welcome {
             flex-direction: column !important;
+
+            h1.title {
+                top: 80% !important;
+            }
+          
             & > article.welcome-left {
                 // clip-path: none !important;
                 display: none;
@@ -920,6 +925,8 @@ footer > div.footer-container {
             & > article.welcome-icon-middle {
                 text-align: end;
                 padding: 0 !important;
+                position: relative;
+                top: -35px;
                 & > img {
                     width: calc(25% - 40px) !important;
                 }
@@ -950,7 +957,7 @@ footer > div.footer-container {
                 }
                  &> span {
                 font-size: 4vw !important;
-                top: 135% !important;
+                top: 110% !important;
                 }
             }
             }
@@ -1027,13 +1034,14 @@ footer > div.footer-container {
             bottom: -200px !important;
             & > h2 {
                 position: relative !important;
-    bottom: -30px !important;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+                 bottom: -30px !important;
+                left: 50%;
+                 transform: translate(-50%, -50%);
+                 text-align: center;
             }
             & > section.article-extras {
                 flex-direction: column !important;
+                height: 470px;
             }
         }
 
@@ -1048,7 +1056,7 @@ footer > div.footer-container {
             position: fixed;
             top: 10px;
             left: 10px;
-            z-index: 9999;
+            z-index: 500;
             & > img {
                 width: 55px;
                 filter: invert(1);
@@ -1068,5 +1076,53 @@ footer > div.footer-container {
     }
 
 }
+}
 
+@media only screen and (max-width: 400px) {
+
+    div.index-container {
+
+        & > section.index-container-section-welcome { 
+            h1.title {
+               font-size: 25px !important;
+            }
+
+            & > article.carousel-imgs {
+                & > article.slide {
+                    & > span.slider-content {
+                        top: 130% !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 345px) {
+
+    div.index-container {
+
+        & > section.index-container-section-welcome { 
+            h1.title {
+                top: 130% !important;
+               font-size: 15px !important;
+            }
+
+            & > article.carousel-imgs {
+                & > article.slide {
+                    & > span.slider-content {
+                        top: 170% !important;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 300px !important;
 }
