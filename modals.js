@@ -57,3 +57,24 @@ $('.reservation-modal-close').on('click', function(){
 // })
 // SIDE MENU
 
+// SIDE MENU ITEMS MODAL OPEN/CLOSE
+
+$('#side-menu-about').on('click', function() {
+   // $('#offcanvasWithBothOptions').offcanvas('hide');
+   $('#about').modal('toggle');
+});
+
+$('#side-menu-contacts').on('click', function() {
+   $('#contacts').modal('toggle');
+});
+
+$('#side-menu-gallery').on('click', function() {
+   $('#gallery').modal('toggle');
+});
+
+$('#side-menu-reservation').on('click', function() {
+   $('#reservation').modal('toggle');
+});
+// SIDE MENU ITEMS MODAL OPEN/CLOSE
+
+

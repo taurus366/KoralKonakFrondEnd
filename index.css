@@ -211,7 +211,7 @@ main div.index-container > .index-container-section-welcome > a.arrow-left {
   position: absolute;
   z-index: 500;
   left: 25px;
-  top: 30vh;
+  top: 240px;
 }
 main div.index-container > .index-container-section-welcome > a.arrow-left > img {
   background: #F7EECA;
@@ -239,7 +239,7 @@ main div.index-container > .index-container-section-welcome > a.arrow-right {
   position: absolute;
   z-index: 500;
   right: 25px;
-  top: 30vh;
+  top: 240px;
 }
 main div.index-container > .index-container-section-welcome > a.arrow-right > img {
   background: #F7EECA;
@@ -795,4 +795,27 @@ footer > div.footer-container > article.main-text > p > b > a {
 }
 .offcanvas {
   --bs-offcanvas-width: 300px !important;
+  background: #FCF3CF !important;
+  border: none !important;
+}
+.offcanvas h5.offcanvas-title {
+  flex-grow: 1;
+  text-align: center;
+  padding-left: 10px;
+  font-size: 2.5em;
+  color: darkgoldenrod;
+}
+.offcanvas div.side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5em;
+}
+.offcanvas div.side-menu > a {
+  text-decoration: none;
+  color: salmon;
+}
+.offcanvas div.side-menu > a:not(:last-child) {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=index.css.map */

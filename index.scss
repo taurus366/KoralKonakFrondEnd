@@ -325,7 +325,8 @@ main {
                 position: absolute;
                 z-index: 500;
                 left: 25px;
-                top: 30vh;
+                // top: 30vh;
+                top: 240px;
 
                 &>img {
                     background: #F7EECA;
@@ -361,7 +362,8 @@ main {
                 position: absolute;
                 z-index: 500;
                 right: 25px;
-                top: 30vh;
+                // top: 30vh;
+                top: 240px;
 
                 &>img {
                     background: #F7EECA;
@@ -1125,4 +1127,31 @@ footer > div.footer-container {
 
 .offcanvas {
     --bs-offcanvas-width: 300px !important;
+    background: #FCF3CF !important;
+    border: none !important;
+
+    h5.offcanvas-title {
+        flex-grow: 1;
+        text-align: center;
+        padding-left: 10px;
+        font-size: 2.5em;
+        color: darkgoldenrod;
+    }
+
+    div.side-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.5em;
+
+        & > a {
+            text-decoration: none;
+            color: salmon;
+        }
+
+        & > a:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
 }
